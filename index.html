@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NOM deRBY - The Roller Derby Name Generator</title>
+	<link href="https://fonts.googleapis.com/css?family=Archivo|Righteous" rel="stylesheet">
+	<script src="https://use.fontawesome.com/1e45c58add.js"></script> <!-- load fontAwesome -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> <!-- jQuery UI styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css"> <!-- link to CSS -->
+</head>
+<!-- Hello kind grader! Please use Prepros Live Preview or visit the live site nomderby.com to get the functionality working as the names are pulled from a JSON file -->
+<body>
+	<main>
+		<header>
+			<!-- <h1>Hall Of Wreckords</h1> -->
+			<h1>Nom <span>de</span>Rby</h1>
+		</header>
+		<form action="">
+			<div class="formContainer">
+				<div class="nameContainer">
+					<input type="text" id="firstName" name="first" placeholder="First Name" class="dropBox" autocomplete="off">
+					<div class="checkContainer">
+						<input type="checkbox" id="saveFirst">
+						<label for="saveFirst">Save First Name</label>
+					</div> <!-- checkContainer -->
+				</div> <!-- nameContainer -->
+
+				<div class="nameContainer">
+					<input type="text" id="lastName" name="last" placeholder="Last Name" class="dropBox" autocomplete="off">
+					<div class="checkContainer">
+						<input type="checkbox" id="saveLast">
+						<label for="saveLast">Save Last Name</label>
+					</div> <!-- checkContainer -->
+				</div> <!-- nameContainer -->
+			</div> <!-- formContainer -->
+			<div class="randomContainer">
+				<input type="checkbox" id="random">
+				<label for="random">Randomize</label>
+			</div> <!-- randomContainer -->
+			<div class="submitContainer">
+				<input type="submit" value="Generate">
+			</div> <!-- submitContainer -->
+			 <!-- To be displayed only after input received -->
+			<div class="outputArea">
+				<div class="buttonContainer">
+					<button id="firstButton" class="draggable"></button>
+					<button id="lastButton" class="draggable"></button>
+				</div>
+				<p>Click and drag either name to save it and reroll the other</p>
+				<a class="twitter popup" href="http://twitter.com/share"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</div>
+		</form>
+		
+	</main>
+	<i class="fa fa-bolt fa-flip-horizontal bolt-one" aria-hidden="true"></i>
+	<i class="fa fa-bolt bolt-two" aria-hidden="true"></i>
+	<footer>
+		<div class="footerText">
+			<p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 <a href="http://brettnielsen.ca/">Brett Nielson</a> &amp; <a href="http://juneepstein.com">June Epstein</a></p>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> <!-- load jQuery -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> <!-- jQuery UI -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> <!-- jQuery mobile UI -->
+	<script src="scripts/script.js"></script> <!-- link to JS -->
+</body>
+</html>
